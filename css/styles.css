@@ -32,53 +32,61 @@ header{
     
     /*контейнер хедера*/
    .page-header{
-    
+    width: 1200px;
     margin-left: auto;
     margin-right: auto;
-    width: 1230px;
-    height: 80px;
-    background-color: var(--title-second-text-color);
-    outline: 2px solid tomato;   
+    border-bottom: 1px solid #ECECEC;
+             
    } 
 
-   .main-nav{
-    display: inline-block;
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    outline: 2px solid tomato;
+
+  .container{
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       margin-left: auto;
+       margin-right: auto;
+       padding-left: 15px;
+       padding-right: 15px;
+   }
+
+   .page-header .main-nav{
+    display: flex;    
 
     background-color:var(--title-second-text-color);
    }
+
    .logo .header {
-    display: block;
-    margin-left: 200px;
-    margin-top: 25px;
-    margin-bottom: 25px;  
-    outline: 2px solid tomato;
+    display: inline-block;
+    justify-content: flex-start;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-left: 0px;
+    
 }    
 
-   
-
-.site-nav{
+   .main-nav .list{
     display: flex;
-    padding-left: 86px;
+    margin-left: 85px;
     padding-top: 32px;
     padding-bottom: 32px;
-} 
+    padding-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+   }
 
-.site-nav .item + .item{
+.main-nav .item + .item{
     margin-left: 50px;
 }
 
  /*стиль навигации*/
- .site-nav{
+ .main-nav{
     display: inline-block;
     margin-top: 0em;
     margin-bottom: 0em;
     display: flex;
 }
-.site-nav .link{
+.main-nav .link{
     display: block;
     margin-bottom: 0px;
 
@@ -91,37 +99,30 @@ header{
     letter-spacing: 0.02em;
     }
 
-.site-nav .link:hover,
-.site-nav .link:focus, 
-.site-nav .link:active{
+.main-nav .link:hover,
+.main-nav .link:focus, 
+.main-nav .link:active{
     color:var(--accent-color);
 }
-.site-nav .link.curent{
+.main-nav .link.curent{
     color:var(--accent-color);
 }    
 
-   .contact-nav{
-    display: block;
+   .address-nav .list{
     display: flex;
-    margin-top: 32px;
-    margin-bottom: 32px;
-    margin-right: 0px;
-    padding-left: 350px;
-    
+    margin-left: 331px;
+    padding-left: 0px;
+   
     background-color:var(--title-second-text-color);
    }
 
-.contact-nav .item + .item{
+.address-nav .item + .item{
     margin-left: 30px;
-}
-
-.contact-nav .img-item{
-    margin-right: 10px ;
 }
 
     /*стиль адреса*/
               
-    .contact-nav { 
+    .address-contact { 
         color:var(--primary-text-color);
         font-family: Roboto sans-serif;
         font-style: normal;
@@ -137,12 +138,7 @@ header{
     .adress-link:focus{
         color:var(--accent-color);  
         }
-
-        .container-adress .list{
-            margin-top: 0em;
-            margin-bottom: 0em;
-        }  
-
+       
 /*лого*/
     .logo > span {
         color: var(--accent-color);
@@ -152,8 +148,7 @@ header{
         display: block;
         padding-top: 25px;
         padding-bottom: 25px;
-        padding-left: 15px;
-
+        
         color: var(--title-text-color);
         font-family: Raleway sans-serif;
         font-style: normal;
@@ -185,8 +180,9 @@ header{
         height: 50px;
         padding: 10px 32px;
          margin-top: 46px;
-        margin-left: 200px;
-         
+         margin-bottom: 200px;
+        margin-left: 500px;
+        align-items: center;     
         border-radius: 3px;
 
         font-family: Roboto sans-serif;
@@ -244,21 +240,19 @@ header{
         }
 
         main{ 
-            width: 1230px;
+            width: 1200px;
             margin-left: auto;
             margin-right: auto;
 }
 
     /*стиль главного фона и цвет заголовка*/      
     .section{
-        margin-left: -200px;
+        margin-left: auto;
         margin-right: auto;
-        width: 1600px;
-        height: 600px;
-        outline: 1px solid tomato;
+        width: 1200px;
         padding-top: 200px;
-        padding-left: 477px;
-        padding-right: 477px;
+        padding-left: auto;
+        padding-right: auto;
 
         background-color:rgba(47, 48, 58, 0.8); ;
         color: var(--title-second-text-color);
@@ -269,8 +263,10 @@ header{
             width: 646px;
             height: 104px;
             margin-top: 0px;
+            margin-right: auto;
             margin-bottom: 0px;
-
+            margin-left: auto;
+            
             text-align: center;
             font-family: Roboto sans-serif;
             font-style: normal;
@@ -283,19 +279,24 @@ header{
 
 /*особенности*/
 .features{
-    display: flex
-    height: 251px;
-    width: 1230px;
+    display: flex;
+    width: 1200px;
     padding-top: 94px;
-    padding-bottom: 94px;;
+    padding-bottom: 94px;
+    padding-left: 15px;
+    padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
+    border-bottom: 1px solid #ECECEC;
     
     }
 
-.features-list{
+.features .list{
     display: flex;
+
     padding-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
     margin-left: auto;
     margin-right: auto;
     
@@ -304,9 +305,10 @@ header{
 .features .item + .item{
     margin-left: 29px;
 }
-                        
-    .image{ 
-        width: 278px;
+
+    .features .image{
+        background-color: var(--accent-background-color);
+        width: 270px;
         height: 120px;
         background-color: var(--accent-background-color);
         padding-top: 25px;
@@ -315,11 +317,6 @@ header{
         padding-right: 106px;
         border-radius: 4px;
         justify-content: space-between;
-        
-    }
-
-    .features .image{
-        background-color: var(--accent-background-color);
         }   
     .features .image:hover,
     .features .image:focus,
@@ -362,11 +359,12 @@ header{
         /*наш профиль*/
     
         .profile{
-            width: 1230px;
+            width: 1200px;
+            padding-top: 94px;
         }
 
         .profile .title{
-        width: 1230px;
+        width: 1200px;
         margin-left: auto;
         margin-right: auto;
         margin-top: 0px;
@@ -382,18 +380,18 @@ header{
         }   
 
 .profile .box{
-    width: 380px;
+    width: 370px;
     height: 294px;
 }
 
 .profile .image-prof{
-    width: 380px;
+    width: 370px;
     height: 294px;
 }
 
 .profile .list{
     display: flex;
-    width: 1230px;
+    width: 1200px;
     margin-top: 0px;
     margin-bottom: 0px;
     padding-top: 50px;
