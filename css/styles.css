@@ -276,6 +276,10 @@ header{
 
 /*особенности*/
 .features{
+    background-color: var(--title-second-text-color);  
+    }
+
+    .container-features{
     display: flex;
     width: 1200px;
     padding-top: 94px;
@@ -355,9 +359,14 @@ header{
 
         /*наш профиль*/
     
-        .profile{
-            width: 1200px;
+    .profile{
+        width: 1200px;
+        background-color: var(--title-second-text-color)
+                    }
+
+        .container-profile{
             padding-top: 94px;
+            padding-bottom: 94p;
         }
 
         .profile .title{
@@ -367,6 +376,7 @@ header{
         margin-top: 0px;
         margin-bottom: 0px;
 
+        color: var(--title-text-color);
         font-family: Roboto sans-serif;
         font-style: normal;
         font-weight: bold;
@@ -376,12 +386,14 @@ header{
         letter-spacing: 0.03em;
         }   
 
-.profile .box{
+.profile> .box{
+    display: block;
     width: 370px;
     height: 294px;
 }
 
 .profile .image-prof{
+    display: block;
     width: 370px;
     height: 294px;
 }
@@ -424,9 +436,9 @@ header{
     background-color: var(--accent-background-color);
     }
 
-.team .container{
+.container-team{
     flex-direction: column;
-    width: 1170px;
+    
     padding-top: 94px;
     padding-right: 0px;
     padding-bottom: 94px;
