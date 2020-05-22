@@ -551,9 +551,9 @@ letter-spacing: 0.03em;
        padding: 0px;
             }
 
-.team__social-links:hover, 
-.team__social-links:focus,
-.team__social-links:active
+.social-links:hover, 
+.social-links:focus,
+.social-links:active
     {background-color: var(--accent-color);}
 
     /*постоянные клиенты*/
@@ -781,14 +781,15 @@ margin-right: 94px;
       }
       
 .main-portfolio{
-    width: 1200px;
-    padding-top: 94px;
-    padding-right: 15px;
-    padding-bottom: 94px;
-    padding-left: 15px;
-}
+    background-color: var(--title-second-text-color);
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    }
 
 .button-container{
+    width: 1200px;
     display: block;
     justify-content: center;
     margin-left: auto;
