@@ -790,26 +790,25 @@ margin-right: 94px;
 
 .button-container{
     width: 1200px;
-    display: block;
-    justify-content: center;
     margin-left: auto;
     margin-right: auto;
+    display: block;
+    justify-content: center;
+    
 }
 
      .button-container__button-list{
-        width: 420px;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         
-        margin-right: auto;
-        margin-left: auto;
-        margin-top: 0px;
+        margin-top: 93px;
         margin-bottom: 0px;
         
         padding-left: 0px;
       }
 
       .button-container__button{
+        margin-right: 8px;
         border-radius: 4px;
 
         background-color: var(--accent-background-color);
@@ -821,6 +820,10 @@ margin-right: 94px;
         line-height: 1.62;
         text-align: center;
         letter-spacing: 0.03em;
+      }
+
+      .button-container__button:not(:last-child){
+          margin-right: 8px;
       }
 
       .button-container__button:hover,
@@ -836,9 +839,12 @@ margin-right: 94px;
 
 .portfolio-container{
     width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    
     padding-top: 50px;
     padding-right: 15px;
-        padding-left: 15px;
+    padding-left: 15px;
 }
 
 .portfolio-container__production-list{
@@ -901,12 +907,6 @@ margin-right: 94px;
     line-height: 1.87;
     letter-spacing: 0.03em;
 }
-
-      .item .card{
-          width: 370px;
-          margin-top: 30px;
-          padding-top: 0px;
-      }
           
       .container .production-list{
         display: flex;
