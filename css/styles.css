@@ -70,7 +70,6 @@ header{
 
  /*стиль навигации*/
  .main-nav{
-    margin-left: auto;
     display: inline-block;
     margin-top: 0em;
     margin-bottom: 0em;
@@ -103,6 +102,10 @@ header{
        
     background-color:var(--title-second-text-color);
    }
+
+.address-nav{
+    margin-left: auto;
+}
 
 .address-nav .item + .item{
     margin-left: 30px;
