@@ -57,9 +57,8 @@ header{
 .main-nav .list{
     display: flex;
     margin-left: 85px;
-    padding-top: 32px;
-    padding-bottom: 32px;
     padding-left: 0px;
+    align-items: center;
     margin-top: 0px;
     margin-bottom: 0px;
    }
@@ -78,6 +77,8 @@ header{
 .main-nav .link{
     display: block;
     margin-bottom: 0px;
+    padding-top: 32px;
+    padding-bottom: 32px;
 
     color: var(--title-text-color);
     font-family: Roboto, sans-serif;
@@ -119,6 +120,9 @@ header{
     /*стиль адреса*/
               
     .address-contact { 
+        padding-top: 32px;
+        padding-bottom: 32px;
+
         color:var(--primary-text-color);
         font-family: Roboto, sans-serif;
         font-style: normal;
