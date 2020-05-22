@@ -38,13 +38,13 @@ header{
    } 
 
 
-  .container{
+.container{
     display: flex;   
     width: 1200px;
-        margin-left: auto;
-       margin-right: auto;
-       padding-left: 15px;
-       padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
    }
 
    .page-header .main-nav{
@@ -54,7 +54,7 @@ header{
    }
 
    
-   .main-nav .list{
+.main-nav .list{
     display: flex;
     margin-left: 85px;
     padding-top: 32px;
@@ -70,6 +70,7 @@ header{
 
  /*стиль навигации*/
  .main-nav{
+    margin-left: auto;
     display: inline-block;
     margin-top: 0em;
     margin-bottom: 0em;
@@ -99,9 +100,7 @@ header{
 
    .address-nav .list{
     display: flex;
-    margin-left: 331px;
-    padding-left: 0px;
-   
+       
     background-color:var(--title-second-text-color);
    }
 
