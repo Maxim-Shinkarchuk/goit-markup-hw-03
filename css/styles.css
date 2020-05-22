@@ -180,14 +180,16 @@ header{
     
     /*стиль кнопок*/
     .button-primary{
-        display: inline-block;
+        display: block;
         width: 200px;
         height: 50px;
-        padding: 10px 32px;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
          margin-top: 46px;
-         margin-bottom: 200px;
-        margin-left: 500px;
-        align-items: center;     
+         
+              margin-left: auto;  
+              margin-right: auto;    
         border-radius: 3px;
 
         font-family: Roboto, sans-serif;
@@ -244,18 +246,18 @@ header{
            background-color: var(--title-second-text-color); 
         }
 
-        main{ 
-            width: 1200px;
-            margin-left: auto;
-            margin-right: auto;
-}
+    main{ 
+    margin-left: auto;
+    margin-right: auto;
+    }
 
     /*стиль главного фона и цвет заголовка*/      
     .section{
         margin-left: auto;
         margin-right: auto;
-        width: 1200px;
+        
         padding-top: 200px;
+        padding-bottom: 200px;
         padding-left: auto;
         padding-right: auto;
 
@@ -288,8 +290,8 @@ header{
     }
 
     .container-features{
-    display: flex;
     width: 1200px;
+    display: flex;
     padding-top: 94px;
     padding-bottom: 94px;
     padding-left: 15px;
@@ -368,14 +370,18 @@ header{
         /*наш профиль*/
     
     .profile{
-        width: 1200px;
+        
         background-color: var(--title-second-text-color)
                     }
 
         .container-profile{
+            width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
             padding-top: 94px;
-            padding-bottom: 94p;
-            margin-bottom: 94px;
+            padding-right: 15px;
+            padding-bottom: 94px;
+            padding-left: 15px;
         }
 
         .profile .title{
@@ -409,12 +415,12 @@ header{
 
 .profile .list{
     display: flex;
-    width: 1200px;
+    padding-left: 0px;
+
     margin-top: 0px;
     margin-bottom: 0px;
     padding-top: 50px;
-    padding-left: 15px;
-}
+    }
 
 .profile .item + .item{
     margin-left: 30px;
@@ -437,16 +443,16 @@ header{
     letter-spacing: 0.03em;
     }
         /*команда*/
+
 .team{
-        width: 1200px;
-        margin-top: 0px;
-        padding-left: 15px;
-        padding-right: 15px;
+    margin-top: 0px;
     background-color: var(--accent-background-color);
     }
 
 .team__container-team{
-        
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 94px;
     padding-right: 0px;
     padding-bottom: 94px;
@@ -480,7 +486,8 @@ header{
     justify-content: space-between;
     margin-top: 0px;
     margin-bottom: 0px;
-    padding-left: 0px;
+    padding-left: 15px;
+    padding-right: 15px;
                
     }
 
@@ -555,9 +562,14 @@ letter-spacing: 0.03em;
     }
 
 .clients__container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
     background-color: var(--title-second-text-color);
     padding-top: 94px;
+    padding-right: 15px;
     padding-bottom: 94px;
+    padding-left: 15px;
     }
 
     .clients__title{
@@ -641,25 +653,26 @@ letter-spacing: 0.03em;
     /*футер*/
 .footer{
     background-color:#2F303A ;
-    width: 1200px;
+    
     margin-left: auto;
     margin-right: auto;
-    padding-top: 48px;
+    padding-top:48px;
     padding-bottom: 21px;
-    padding-left: 15px;
-    padding-right: 15px;
-}
+    }
 
 .footer__container{
+   width: 1200px;
+   margin-left: auto;
+   margin-right: auto;
+   padding-left: 15px;
+   padding-right: 15px;
    display: flex;
    justify-content: baseline;
-   
-   
+
 }   
 
 .footer__container__logo-adress{
-    margin-top: 10px;
-    margin-right: 40px;
+    margin-right: auto;
     padding: 0px;
     
     color:var(--title-second-text-color) ;
@@ -674,7 +687,7 @@ letter-spacing: 0.03em;
 .footer__container__logo-adress__adress{
     margin-top: 10px;
     margin-bottom: 0px;
-    margin-right: 69px;
+    margin-right: auto;
     }    
 
 .footer__container__logo-adress__contact{
@@ -713,6 +726,7 @@ margin-right: 94px;
 .footer__container__social__social-list{
     display: flex;
     padding-left: 0px;
+    list-style-type: none;
 }
 
 .footer__container__subscribe{
