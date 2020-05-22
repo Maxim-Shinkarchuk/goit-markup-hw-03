@@ -303,8 +303,8 @@ header{
     
 }
 
-.features .item + .item{
-    margin-left: 29px;
+.features .item{
+    justify-content: space-between;
 }
 
     .features .image{
@@ -437,9 +437,8 @@ header{
     background-color: var(--accent-background-color);
     }
 
-.container-team{
-    flex-direction: column;
-    
+.team__container-team{
+        
     padding-top: 94px;
     padding-right: 0px;
     padding-bottom: 94px;
@@ -447,7 +446,7 @@ header{
 
 }    
 
-    .team-title{
+    .team__title{
         
         margin-top: 0px;
         margin-right: auto;
@@ -468,51 +467,57 @@ header{
         letter-spacing: 0.03em;
         }
 
-.team .list{
+.team__list{
     display: flex;
+    justify-content: space-between;
     margin-top: 0px;
     margin-bottom: 0px;
     padding-left: 0px;
                
     }
 
-.team .item{
+.team__item{
     width: 270px;
 }    
     
-.team .item + .item{
-    margin-left: 30px ;
-    }
     
-    .container .card{
-    flex-direction: column;
+    .team__card{
+        border-radius: 4px;
+        background-color: var(--title-second-text-color);
+    }
+
+.team__image{
+    display: block;
+}
+
+    .team__content-card{
     width: 270px;
     padding-top: 30px;
-    padding-bottom: 0px;
-    background-color: var(--title-second-text-color);
-    border-radius: 4px;
+    padding-bottom: 24px;
+    
+    
 
 }
 
 
 
-.team .team-name{
-    margin-top: 0px;
-    margin-bottom: 0px;
-        
-    background-color: var(--accent-background-color);
-    color: var(--title-text-color);
-    font-family: Roboto sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.88;
-    letter-spacing: 0.03em;
+.team__name{
+text-align: center;  
+margin: 0px;
+
+color: var(--title-text-color);
+font-family: Roboto sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.88;
+letter-spacing: 0.03em;
     }
 
-.team .team-text{
-        margin-top: 10px;
-        margin-bottom: 0px;
+.team__text{
+    padding-top: 10px;
+    text-align: center;
+    margin: 0px;
         
     color: var(--primary-text-color);
     font-family: Roboto sans-serif;
@@ -524,17 +529,16 @@ header{
 
     }
 
-    .social-list{
+    .team__social-list{
         display: flex;
-        justify-content: center;
-        margin-top: 16px;
-        margin-bottom: 24px;
+        justify-content: space-evenly;
+        margin: 0px;
        padding: 0px;
             }
 
-.team-social-links:hover, 
-.team-social-links:focus,
-.team-social-links:active
+.team__social-links:hover, 
+.team__social-links:focus,
+.team__social-links:active
     {background-color: var(--accent-color);}
 
     /*постоянные клиенты*/
@@ -542,17 +546,15 @@ header{
     background-color: var(--accent-background-color);
     }
 
-.container-clients {
+.clients__container {
     background-color: var(--title-second-text-color);
-    justify-content: space-between;
-    
-}
+    padding-top: 94px;
+    padding-bottom: 94px;
+    }
 
-    .clients .clients-title{
-    margin-top: 94px;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 0px;
+    .clients__title{
+    text-align: center;
+    margin: 0px;
 
     color: var(--title-text-color);
     font-family: Roboto sans-serif;
@@ -564,19 +566,15 @@ header{
     letter-spacing: 0.03em;
     }
 
-.clients .list{
+.clients__list{
     display: flex;
-    margin-top: 50px;
-    margin-bottom: 94px;
+    padding-top: 50px;
     padding-left: 0px;
-
+    justify-content: space-between;
+    margin: 0px;
     }
-
-.clients .list .item + .item{
-    margin-left: 30px;
-}    
-
-.clients .item{
+ 
+.clients__item{
     width: 170px;
     height: 90px;
     border: 1px solid #AFB1B8;
@@ -585,9 +583,9 @@ header{
 }
 
 
-.clients .clients-logo:hover,
-.clients .clients-logo:focus,
-.clients .clients-logo:active
+.clients__logo:hover,
+.clients__logo:focus,
+.clients__logo:active
     {
     background-color: var(--accent-color);
     }
