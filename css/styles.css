@@ -638,6 +638,8 @@ letter-spacing: 0.03em;
     margin-right: auto;
     padding-top: 48px;
     padding-bottom: 21px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .footer__container{
@@ -648,7 +650,8 @@ letter-spacing: 0.03em;
 }   
 
 .footer__container__logo-adress{
-    margin: 0px;
+    margin-top: 10px;
+    margin-right: 40px;
     padding: 0px;
     
     color:var(--title-second-text-color) ;
@@ -709,6 +712,7 @@ margin-right: 94px;
 }
 
 .footer__container__subscribe__join{
+    display: block;
     margin-top: 0px;
     
     color: var(--title-second-text-color);
@@ -734,6 +738,7 @@ margin-right: 94px;
     font-weight: 900;
     font-size: 16px;
     line-height: 30px;
+    border-radius: 4px;
 }
 
 .footer__copyright-container{
@@ -753,47 +758,141 @@ margin-right: 94px;
     letter-spacing: 0.03em;
       }
       
-     .button-list{
+.main-portfolio{
+    width: 1200px;
+    padding-top: 94px;
+    padding-right: 15px;
+    padding-bottom: 94px;
+    padding-left: 15px;
+}
+
+.button-container{
+    display: block;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+     .button-container__button-list{
+        width: 420px;
         display: flex;
-        margin-top: 93px;
+        justify-content: space-between;
+        
         margin-right: auto;
-        margin-bottom: 0ex;
         margin-left: auto;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        
+        padding-left: 0px;
+      }
+
+      .button-container__button{
+        border-radius: 4px;
+
+        background-color: var(--accent-background-color);
+        color: var(--title-text-color);
+        font-family: Roboto sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.62;
+        text-align: center;
+        letter-spacing: 0.03em;
+      }
+
+      .button-container__button:hover,
+      .button-container__button:focus,
+      .button-container__button:active{
+          background-color: var(--accent-color);
+          color: var(--title-second-text-color);
       }
 
       .button-list .item + .item{
           margin-left: 8px;
       }
 
+.portfolio-container{
+    width: 1200px;
+    padding-top: 50px;
+    padding-right: 15px;
+        padding-left: 15px;
+}
+
+.portfolio-container__production-list{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px;
+    padding: 0px;
+}
+
+.portfolio-container__item{
+    margin-bottom: 30px;
+}
+
+.portfolio-container__item:(:nth-child(n-3)){
+margin-right: 30px;
+}
+
+.portfolio-container__link{
+
+}
+
+.portfolio-container__image-card{
+    display: block
+}
+
+.portfolio-container__card-content{
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    background: #FFFFFF;
+    border-left: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+    box-sizing: border-box;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.portfolio-container__production-title{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    
+    color: var(--title-text-color);
+    font-family: Roboto sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em
+}
+
+.portfolio-container__name{
+    margin-top: 4px;
+    margin-bottom: 0px;
+   
+    color: var(--primary-text-color);
+    font-family: Roboto sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+}
+
       .item .card{
           width: 370px;
           margin-top: 30px;
           padding-top: 0px;
       }
-
-      .card .card-content{
-        padding-left: 24px;
-        padding-right: 24px;
-        padding-top: 20px;
-        padding-bottom: 20px;
-
-        background: #FFFFFF;
-        border-left: 1px solid #EEEEEE;
-        border-right: 1px solid #EEEEEE;
-        border-bottom: 1px solid #EEEEEE;
-        box-sizing: border-box;
-        border-bottom-left-radius: 5px;
-        border-bottom-right-radius: 5px;
-      }
-
-      .image-card{
-          display: block;
-      }
-
+          
       .container .production-list{
         display: flex;
         flex-wrap: wrap;
         padding: 0px;
+        margin-left: 0px;
       }
 
     .production-list .item:not(:nth-child(3n)){
