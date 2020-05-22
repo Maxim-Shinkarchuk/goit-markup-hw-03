@@ -23,7 +23,7 @@ a{
         text-decoration: none;
     }
 /* Убираем маркеры */
-ul {list-style-type: none;}
+ul [class] {list-style-type: none;}
 
 /* стили для хедера */
 header{
@@ -99,6 +99,9 @@ header{
 
    .address-nav .list{
     display: flex;
+    margin: 0;
+  padding: 0;
+  list-style: none;
        
     background-color:var(--title-second-text-color);
    }
