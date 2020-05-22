@@ -367,6 +367,7 @@ header{
         .container-profile{
             padding-top: 94px;
             padding-bottom: 94p;
+            margin-bottom: 94px;
         }
 
         .profile .title{
@@ -541,9 +542,10 @@ header{
     background-color: var(--accent-background-color);
     }
 
-.clients>.container {
+.container-clients {
     background-color: var(--title-second-text-color);
-    flex-direction: column;
+    justify-content: space-between;
+    
 }
 
     .clients .clients-title{
