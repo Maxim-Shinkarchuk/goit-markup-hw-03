@@ -454,9 +454,9 @@ header{
     margin-left: auto;
     margin-right: auto;
     padding-top: 94px;
-    padding-right: 0px;
+    padding-right: 15px;
     padding-bottom: 94px;
-    padding-left: 0px;
+    padding-left: 15px;
 
 }    
 
@@ -486,9 +486,8 @@ header{
     justify-content: space-between;
     margin-top: 0px;
     margin-bottom: 0px;
-    padding-left: 15px;
-    padding-right: 15px;
-               
+    padding-left: 0px;
+    padding-right: ;
     }
 
 .team__item{
@@ -509,12 +508,8 @@ header{
     width: 270px;
     padding-top: 30px;
     padding-bottom: 24px;
-    
-    
 
 }
-
-
 
 .team__name{
 text-align: center;  
@@ -667,6 +662,7 @@ letter-spacing: 0.03em;
    padding-left: 15px;
    padding-right: 15px;
    display: flex;
+   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
    justify-content: baseline;
 
 }   
@@ -767,7 +763,7 @@ margin-right: 94px;
     padding-top: 18px;
     
     margin: 0px;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    
     justify-content: center;
 
     color: rgba(255, 255, 255, 0.4);  
