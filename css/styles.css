@@ -815,6 +815,10 @@ margin-right: 94px;
       .button-container__button{
         margin-right: 8px;
         border-radius: 4px;
+        padding-top: 6px;
+        padding-right: 22px;
+        padding-bottom: 6px;
+        padding-left: 22px;
 
         background-color: var(--accent-background-color);
         color: var(--title-text-color);
@@ -851,7 +855,7 @@ margin-right: 94px;
     padding-right: 0px;
 }
 
-.portfolio-container__item: not(:nth-child(3n)){
+.portfolio-container__item:not(:nth-child(3n)){
     margin-right: 30px;
 }
 
