@@ -17,7 +17,7 @@ html{
 /* стили для боди */
 body{
     background-color:#FFFFFF ;
-    color: var(--primary-text-color);
+    color: var(--title-second-text-color);
        }
 a{
         text-decoration: none;
@@ -25,33 +25,38 @@ a{
 /* Убираем маркеры */
 ul [class] {list-style-type: none;}
 
-/* стили для хедера */
-header{
-        color: var(--title-text-color);
-        }
     
-    /*контейнер хедера*/
+    /* хедер*/
    .page-header{
     
     border-bottom: 1px solid #ECECEC;
              
    } 
 
+.section{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.header-container{
+    display: flex;
+    width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
 
 .container{
-    display: flex;   
     width: 1200px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
-   }
+      }
 
-   .page-header .main-nav{
-    display: flex;    
-
-    background-color:var(--title-second-text-color);
-   }
+  
 
    
 .main-nav .list{
@@ -70,8 +75,8 @@ header{
  /*стиль навигации*/
  .main-nav{
     display: inline-block;
-    margin-top: 0em;
-    margin-bottom: 0em;
+    margin-top: 0px;
+    margin-bottom: 0px;
     display: flex;
 }
 .main-nav .link{
@@ -174,9 +179,6 @@ header{
         line-height: 1.19;
         letter-spacing: 0.03em;
                 }
-
-   
-
     
     /*стиль кнопок*/
     .button-primary{
@@ -186,10 +188,10 @@ header{
         text-align: center;
         padding-top: 10px;
         padding-bottom: 10px;
-         margin-top: 46px;
-         
-              margin-left: auto;  
-              margin-right: auto;    
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 46px;
+       
         border-radius: 3px;
 
         font-family: Roboto, sans-serif;
@@ -246,29 +248,23 @@ header{
            background-color: var(--title-second-text-color); 
         }
 
-    main{ 
-    margin-left: auto;
-    margin-right: auto;
-    }
+   
 
     /*стиль главного фона и цвет заголовка*/      
-    .section{
+    .section-hero{
         margin-left: auto;
         margin-right: auto;
         
         padding-top: 200px;
         padding-bottom: 200px;
-        padding-left: auto;
-        padding-right: auto;
-
+        
         background-color:rgba(47, 48, 58, 0.8); ;
         color: var(--title-second-text-color);
         }   
 
-        .section .title{
+        .section-hero .title{
             
             width: 646px;
-            height: 104px;
             margin-top: 0px;
             margin-right: auto;
             margin-bottom: 0px;
@@ -283,26 +279,9 @@ header{
             letter-spacing: 0.06em;
             color: var(--title-second-text-color);
                        }
+ 
 
-/*особенности*/
-.features{
-    background-color: var(--title-second-text-color);  
-    }
-
-    .container-features{
-    width: 1200px;
-    display: flex;
-    padding-top: 94px;
-    padding-bottom: 94px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
-    border-bottom: 1px solid #ECECEC;
-    
-    }
-
-.features .list{
+.container .list{
     display: flex;
 
     padding-left: 0px;
@@ -353,9 +332,7 @@ header{
         line-height: 1.14;
         letter-spacing: 0.03em;
         }
-
     
-
     .features .text{
                
         color: var(--primary-text-color);
@@ -369,36 +346,23 @@ header{
 
         /*наш профиль*/
     
-    .profile{
-        
-        background-color: var(--title-second-text-color)
-                    }
+   
+.container .profile{
+    
+}
 
-        .container-profile{
-            width: 1200px;
-            margin-left: auto;
-            margin-right: auto;
-            padding-top: 94px;
-            padding-right: 15px;
-            padding-bottom: 94px;
-            padding-left: 15px;
-        }
+.profile .title{
+    margin-top: 0px;
+    margin-bottom: 50px;
 
-        .profile .title{
-        width: 1200px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 0px;
-        margin-bottom: 0px;
-
-        color: var(--title-text-color);
-        font-family: Roboto, sans-serif;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 36px;
-        line-height: 1.17;
-        text-align: center;
-        letter-spacing: 0.03em;
+    color: green;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
         }   
 
 .profile> .box{
@@ -407,7 +371,7 @@ header{
     height: 294px;
 }
 
-.profile .image-prof{
+.profile .image{
     display: block;
     width: 370px;
     height: 294px;
