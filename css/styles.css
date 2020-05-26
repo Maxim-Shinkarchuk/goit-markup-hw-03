@@ -22,8 +22,25 @@ body{
 a{
         text-decoration: none;
     }
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}    
+
 /* Убираем маркеры */
 ul [class] {list-style-type: none;}
+
+.visually-hidden{
+    position: absolute;
+    width: 1px;clip: 
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    rect(0 0 0 0);
+    overflow: hidden;
+}
 
     
     /* хедер*/
@@ -108,9 +125,7 @@ ul [class] {list-style-type: none;}
     margin: 0;
   padding: 0;
   list-style: none;
-       
-    background-color:var(--title-second-text-color);
-   }
+     }
 
 .address-nav{
     display: flex;
@@ -167,7 +182,6 @@ ul [class] {list-style-type: none;}
 
     .logo.footer{
         display: block;
-        width: 129px;
         margin: 0px;
         padding: 0px;
                 
@@ -184,7 +198,6 @@ ul [class] {list-style-type: none;}
     .button-primary{
         display: block;
         width: 200px;
-        height: 50px;
         text-align: center;
         padding-top: 10px;
         padding-bottom: 10px;
@@ -292,11 +305,20 @@ ul [class] {list-style-type: none;}
     
 }
 
-.features .item{
+.features.item{
     justify-content: space-between;
+    width: 270px;
+    
 }
 
+.features.item:not(:last-child){
+    margin-right: 30px;
+}
+
+
+
     .features .image{
+        display: block;
         background-color: var(--accent-background-color);
         width: 270px;
         height: 120px;
@@ -314,15 +336,11 @@ ul [class] {list-style-type: none;}
         { background-color: var(--accent-color);
         }
 
-    .features .title{
+    .features.title{
         align-self: flex-start;
-        width: 278px;
-        height: 16px;
-        padding-top: 30px;
-        padding-bottom: 10px;
         padding-left: 0px;
         margin-bottom: 0px;
-        margin-top: 0px;
+        margin-top: 30px;
         
         color: var(--title-text-color);
         font-family: Roboto, sans-serif;
@@ -333,8 +351,10 @@ ul [class] {list-style-type: none;}
         letter-spacing: 0.03em;
         }
     
-    .features .text{
-               
+    .features.text{
+        margin-top: 10px;
+        margin-bottom: 0px;
+        
         color: var(--primary-text-color);
         font-family: Roboto, sans-serif;
         font-style: normal;
@@ -413,8 +433,7 @@ ul [class] {list-style-type: none;}
         margin-bottom: 0px;
         margin-left: auto;
         padding-top: 0px;
-        padding-bottom: 50px;
-            
+                    
         color: var(--title-text-color);
         font-family: Roboto, sans-serif;
         font-style: normal;
@@ -428,7 +447,7 @@ ul [class] {list-style-type: none;}
 .team .list{
     display: flex;
     justify-content: space-between;
-    margin-top: 0px;
+    margin-top: 50px;
     margin-bottom: 0px;
     padding-left: 0px;
     padding-right: ;
@@ -567,15 +586,12 @@ letter-spacing: 0.03em;
     padding-bottom: 21px;
     }
 
-.footer__container{
-   width: 1200px;
+.container.footer-box{
    margin-left: auto;
    margin-right: auto;
-   padding-left: 15px;
-   padding-right: 15px;
    display: flex;
    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-   justify-content: baseline;
+   justify-content: center;
 
 }   
 
@@ -704,12 +720,14 @@ margin-right: 94px;
      .button.list{
         display: flex;
         justify-content: center;
-        margin-bottom: 50px;
-        
-      }
+    }
+
+    .button-item:not(:last-child){
+        margin-right: 8px;
+    }
 
       .button-container__button{
-        margin-right: 8px;
+        
         border-radius: 4px;
         padding-top: 6px;
         padding-right: 22px;
@@ -727,9 +745,6 @@ margin-right: 94px;
         letter-spacing: 0.03em;
       }
 
-      .button-container__button:not(:last-child){
-          margin-right: 8px;
-      }
 
       .button-container__button:hover,
       .button-container__button:focus,
@@ -760,19 +775,16 @@ margin-right: 94px;
     display: block
 }
 
-.portfolio-container__card-content{
-    padding-left: 24px;
-    padding-right: 24px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+.portfolio__card{
+    width: 370px;
 
     background: #FFFFFF;
-    border-left: 1px solid #EEEEEE;
-    border-right: 1px solid #EEEEEE;
-    border-bottom: 1px solid #EEEEEE;
-    box-sizing: border-box;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
+    border: 1px solid #EEEEEE;
+    border-radius: 5px;
+}
+
+.portfolio__card-content{
+
 }
 
 .portfolio-title{
